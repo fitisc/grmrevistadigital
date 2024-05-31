@@ -1,19 +1,20 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom';
-import Noticias from './Noticias';
-import Novedades from './Novedades';
-import NotasInteres from './NotasInteres';
+import React, {useState} from 'react'
+
+import Home from './Home';
+import Login from './Login';
+import '../css/main.css'
 
 const Main = () => {
+  const [user, setUser]= useState([])
+
   return (
     <div>
-        
-    <Routes>
-        <Route path="*" element= {<Main />} ></Route>
-        <Route path="noticias/:id" element= {<Noticias />} ></Route>
-        <Route path="novedades/:id" element= {<Novedades />} ></Route>
-        <Route path="notas/:id" element= {<NotasInteres />} ></Route>
-    </Routes>
+    {
+      user.length > 0 ? <Login setUser={setUser}/> :   <Home />
+    }
+    
+   
+    
     </div>
   )
 };

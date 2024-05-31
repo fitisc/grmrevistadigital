@@ -7,20 +7,17 @@ const UserForm = () => {
     const [password, setPassword] = useState("")
     const [error, setError] = useState(false)
 
-    const handleChange = (e) => {
-
-    }
     const handleSubmit = (e) => {
         e.preventDefault()
 
         if (barrio === "" || dni === "" || password === "" ){
             setError(true)
-            return
+            return("Algun campo esta vacio")
         }
         setError(false)
     }
 
-    fetch = ("https:localhost:8080/api/user/save").then(function(response)).catch(error => {response.status});
+    
     console.log()
   return (
     <div>
@@ -48,6 +45,7 @@ const UserForm = () => {
         type="current-password" 
         name="password" 
         id="password" 
+        
         value={password}
         onChange={e => setPassword(e.target.value)}
         />
@@ -55,7 +53,7 @@ const UserForm = () => {
         <button value="ingresar">Ingresar</button>
         
     </form>
-    {error && <p>Algun campo esta vacio</p> }
+    {error}
 </div>
   )
 }

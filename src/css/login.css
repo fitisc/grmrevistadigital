@@ -1,0 +1,15 @@
+.login {
+    position: absolute;
+    top:0%;
+    left:0%;
+    height: 100;
+    background: rgb(139,147,60);
+    background: linear-gradient(90deg, rgba(139,147,60,1) 0%, rgba(121,105,9,1) 35%, rgba(122,175,35,1) 100%);
+}
+.login_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
