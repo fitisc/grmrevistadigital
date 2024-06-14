@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import Auth0Provider from '@auth0/auth0-react'
 //import './index.css';
-import './css/bt.css';
+//import './css/bt.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import * as ServiceWorker from './service-worker'; 
+//serviceWorkerRegistration.js
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +22,7 @@ redirectUrl={window.location.origin} />*/}
     <App />
     </BrowserRouter>
     
+
   </React.StrictMode>
 );
 
@@ -26,3 +30,4 @@ redirectUrl={window.location.origin} />*/}
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+ServiceWorker.unregister();

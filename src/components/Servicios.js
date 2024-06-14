@@ -6,7 +6,10 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import TungstenIcon from '@mui/icons-material/Tungsten';
 import YardIcon from '@mui/icons-material/Yard';
 import BuildIcon from '@mui/icons-material/Build';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
 function Servicios() {
+
   return (
     <>
     <div className="whats-app my-float">
@@ -14,12 +17,19 @@ function Servicios() {
         <img src= { whatsapp } className="w2" alt='whatsapp icon'/>
       </a>
     </div>
-    
+    <section className='section'>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="./Servicios.js" active>
+            Servicios
+          </Breadcrumb.Item>
+        
+        </Breadcrumb>
     <section id="features" className="features">
-      <div className="section-title">
+      <div className="section-title text-center">
         <h2 data-aos="fade-right"> SERVICIOS </h2>
         <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non animi possimus deleniti ipsum a fuga. Expedita, voluptatem. Ratione magni soluta nesciunt debitis, magnam, amet quis delectus, minus adipisci iste distinctio.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         </p>
       </div>
       <div className="container aos-init aos-animate" data-aos="fade-up">
@@ -61,36 +71,24 @@ function Servicios() {
             <div className="row">
               <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
+                  Voluptatem dignissimos
                 </h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, 
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="ri-check-double-line" /> Ullamco laboris
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Duis aute irure dolor
-                    in reprehenderit in voluptate velit.
+                    <i className="ri-check-double-line" /> Duis aute 
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate trideta storacalaperda mastiro
-                    dolore eu fugiat nulla pariatur.
+                    <i className="ri-check-double-line" /> Ullamco laboris .
                   </li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
-                </p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
               </div>
               <div className="col-lg-6 order-1 order-lg-2 text-center">
                 <img
@@ -105,39 +103,26 @@ function Servicios() {
             <div className="row">
               <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>
-                  Neque exercitationem debitis soluta quos debitis quo mollitia
-                  officia est
+                  Neque exercitationem debitis 
                 </h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  Ullamco laboris
                 </p>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="ri-check-double-line" /> Ullamco laboris
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Duis aute irure dolor
-                    in reprehenderit in voluptate velit.
+                    <i className="ri-check-double-line" /> Duis aute
                   </li>
                   <li>
                     <i className="ri-check-double-line" /> Provident mollitia
-                    neque rerum asperiores dolores quos qui a. Ipsum neque dolor
-                    voluptate nisi sed.
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate trideta storacalaperda mastiro
-                    dolore eu fugiat nulla pariatur.
+                    <i className="ri-check-double-line" /> Ullamco laboris
                   </li>
                 </ul>
               </div>
@@ -154,34 +139,24 @@ function Servicios() {
             <div className="row">
               <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>
-                  Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor
-                  ut assumenda
+                  Voluptatibus commodi 
                 </h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  Ullamco laboris 
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="ri-check-double-line" /> Ullamco laboris 
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Duis aute irure dolor
-                    in reprehenderit in voluptate velit.
+                    <i className="ri-check-double-line" /> Duis aute 
                   </li>
                   <li>
                     <i className="ri-check-double-line" /> Provident mollitia
-                    neque rerum asperiores dolores quos qui a. Ipsum neque dolor
-                    voluptate nisi sed.
                   </li>
                 </ul>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet
                 </p>
               </div>
               <div className="col-lg-6 order-1 order-lg-2 text-center">
@@ -197,34 +172,23 @@ function Servicios() {
             <div className="row">
               <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>
-                  Omnis fugiat ea explicabo sunt dolorum asperiores sequi
-                  inventore rerum
+                  Omnis fugiat ea
                 </h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  Ullamco laboris 
                 </p>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor
                 </p>
                 <ul>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <i className="ri-check-double-line" /> Ullamco laboris
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Duis aute irure dolor
-                    in reprehenderit in voluptate velit.
+                    <i className="ri-check-double-line" /> Duis aute
                   </li>
                   <li>
-                    <i className="ri-check-double-line" /> Ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate trideta storacalaperda mastiro
-                    dolore eu fugiat nulla pariatur.
+                    <i className="ri-check-double-line" /> Ullamco laboris
                   </li>
                 </ul>
               </div>
@@ -241,6 +205,7 @@ function Servicios() {
       </div>
     </section>
     {/* End Features Section */}
+    </section>
   </>
   
   );

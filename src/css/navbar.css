@@ -1,8 +1,47 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background-color: #f2eee6;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(21, 34, 43, 0.85);
+  padding: 10px 0;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#header .logo {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
-    background: #fff;
+    background: #f2eee6;
     padding: 0 0 30px 0;
     color: #b65151;
     font-size: 14px;
@@ -29,8 +68,8 @@
     padding: 8px 12px;
   }
   
-  .navbar a,
-  .navbar a:focus {
+  .navbar .nav-link,
+  .navbar .nav-link:focus {
     display: flex;
     align-items: center;
     position: relative;
@@ -51,7 +90,7 @@
     margin-left: 5px;
   }
   
-  .navbar>ul>li>a:before {
+  .navbar>ul>li>.nav-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -64,17 +103,17 @@
     transition: all 0.3s ease-in-out 0s;
   }
   
-  .navbar a:hover:before,
-  .navbar li:hover>a:before,
+  .navbar .nav-link:hover:before,
+  .navbar li:hover>.nav-link:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
   }
   
-  .navbar a:hover,
+  .navbar .nav-link:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover>.nav-link {
     color: #633e3e;
   }
   
@@ -169,7 +208,7 @@
   * Mobile Navigation 
   */
   .mobile-nav-toggle {
-    color: #fff;
+    color: #201b1b;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -219,16 +258,16 @@
     transition: 0.3s;
   }
   
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
+  .navbar-mobile .nav-link,
+  .navbar-mobile .nav-link:focus {
     padding: 10px 20px;
     font-size: 15px;
     color: #15222b;
   }
   
-  .navbar-mobile a:hover,
+  .navbar-mobile .nav-link:hover,
   .navbar-mobile .active,
-  .navbar-mobile li:hover>a {
+  .navbar-mobile li:hover>.nav-link {
     color: #ff4a17;
   }
   

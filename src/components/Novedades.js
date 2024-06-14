@@ -3,7 +3,7 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import { BusinessCenterOutlined } from '@mui/icons-material';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import whatsapp from '../assets/whatsapp2.png';
-
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 const Novedades = () => {
 
@@ -21,37 +21,45 @@ const Novedades = () => {
           <img src= { whatsapp } className="w2" alt='whatsapp icon'/>
         </a>
       </div>
-
+      <section className='section'>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="./Novedades.js" active>
+            Novedades
+          </Breadcrumb.Item>
+        
+        </Breadcrumb>
       <section className="about section-bg">
       <div className="container">
       <section id="services" />
         <div className="row gy-4">
           <div className="col-12">
             <div className="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
-              <div className="section-title">
+              <div className="section-title text-center">
                 <h2 data-aos="fade-right"> NOVEDADES </h2>
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non animi possimus deleniti ipsum a fuga. Expedita, voluptatem. Ratione magni soluta nesciunt debitis, magnam, amet quis delectus, minus adipisci iste distinctio.
+                
+                <p className="text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non animi possimus deleniti ipsum a fuga. Expedita, voluptatem.
                 </p>
               </div>
-
-          <div className="content pt-5">
-            <div className="row">
-              <div className="col-sm-4 mb-3 mb-sm-0">
-                <div
-                  className="card d-flex"
-                  data-aos="fade-right"
-                  style={{ marginBottom: "2rem" }}
-                >
-                  <div className="card-body ">
-                    <BusinessCenterOutlined
+            
+              <div className="content pt-5">
+                <div className="row">
+                  <div className="col-sm-4 mb-3 mb-sm-0">
+                    <div
+                      className="card d-flex"
+                      data-aos="fade-right"
+                      style={{ marginBottom: "2rem" }}
+                    >
+                    <div className="card-body  text-center">
+                      <BusinessCenterOutlined
                       style={{ color: "#D36835", fontSize: 48 }}
-                    />
+                      />
                     <h4
                       className="card-title"
                       style={{ textTransform: "uppercase" }}
                     >
-                      <b>Intendencia</b>
+                    <b>Intendencia</b>
                     </h4>
                     <p className="card-text"
                      //value= {novedad.description}
@@ -62,14 +70,14 @@ const Novedades = () => {
                   </div>
                 </div>
               </div>
-
+            
               <div className="col-sm-4 mb-3 mb-sm-0">
                 <div
                   className="card d-flex"
                   data-aos="fade-right"
                   style={{ marginBottom: "2rem" }}
                 >
-                  <div className="card-body ">
+                  <div className="card-body text-center ">
                     <VerifiedUserIcon
                        style={{ color:"#D36835", fontSize: 48}} 
                      />
@@ -97,7 +105,7 @@ const Novedades = () => {
                   data-aos="fade-right"
                   style={{ marginBottom: "2rem" }}
                 >
-                  <div className="card-body ">
+                  <div className="card-body text-center">
                     <EngineeringIcon
                       style={{ color: "#D36835", fontSize: 48 }}
                     />
@@ -125,7 +133,7 @@ const Novedades = () => {
     </div>
   </div>
 </section>
-
+</section>
 
     </div>
   )
