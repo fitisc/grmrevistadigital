@@ -17,6 +17,13 @@
   height: 50px;
 }
 
+.servicios-title {
+  background-color:  #CDA34F;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
 .features .nav-tabs {
     border: 0;
   }
@@ -44,13 +51,13 @@
   }
   
   .features .nav-link:hover {
-    color: #ff4a17;
+    color:  #CDA34F;
   }
   
   .features .nav-link.active {
-    background: #ff4a17;
+    background: #d1951c;
     color: #fff;
-    border-color: #ff4a17;
+    border-color: #d1951c;
   }
   
   @media (max-width: 768px) {
@@ -92,7 +99,7 @@
   .features .tab-pane ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #ff4a17;
+    color: #d1951c;
   }
   
   .features .tab-pane p:last-child {

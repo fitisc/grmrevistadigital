@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom';
 import '../css/navbar.css';
-import VDG from '../assets/valle del golf.jpg';
+import VDG from '../assets/valle del golf.png';
 
 //</Container>import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';

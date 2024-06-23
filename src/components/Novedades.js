@@ -4,7 +4,8 @@ import { BusinessCenterOutlined } from '@mui/icons-material';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import whatsapp from '../assets/whatsapp2.png';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-
+import { Link } from 'react-router-dom';
+import '../css/novedades.css';
 const Novedades = () => {
 
   //const [novedad, setNovedad] = useState('')
@@ -36,7 +37,7 @@ const Novedades = () => {
           <div className="col-12">
             <div className="content d-flex flex-column justify-content-center ps-0 ps-xl-4">
               <div className="section-title text-center">
-                <h2 data-aos="fade-right"> NOVEDADES </h2>
+                <h2 className='novedades-title' data-aos="fade-right"> NOVEDADES </h2>
                 
                 <p className="text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non animi possimus deleniti ipsum a fuga. Expedita, voluptatem.
@@ -53,7 +54,7 @@ const Novedades = () => {
                     >
                     <div className="card-body  text-center">
                       <BusinessCenterOutlined
-                      style={{ color: "#D36835", fontSize: 48 }}
+                      style={{ color: "#779216", fontSize: 48 }}
                       />
                     <h4
                       className="card-title"
@@ -79,7 +80,7 @@ const Novedades = () => {
                 >
                   <div className="card-body text-center ">
                     <VerifiedUserIcon
-                       style={{ color:"#D36835", fontSize: 48}} 
+                       style={{ color:"#779216", fontSize: 48}} 
                      />
                     
                     <h4
@@ -107,7 +108,7 @@ const Novedades = () => {
                 >
                   <div className="card-body text-center">
                     <EngineeringIcon
-                      style={{ color: "#D36835", fontSize: 48 }}
+                      style={{ color: "#779216", fontSize: 48 }}
                     />
                     <h4
                       className="card-title"
@@ -133,6 +134,22 @@ const Novedades = () => {
     </div>
   </div>
 </section>
+
+<div className="categorias-btn">
+         
+        
+         <div className='eachcat'>
+           <Link to="/notasInteres" className='second-btn'>
+             <span className='second-title'>Notas de Interes</span>
+           </Link>
+         </div>
+         <div className='eachcat'>
+           <Link to="/servicios" className='third-btn'>
+             <span>Servicios</span>
+           </Link>
+         </div>
+       
+     </div>
 </section>
 
     </div>

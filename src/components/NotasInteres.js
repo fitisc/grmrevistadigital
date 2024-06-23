@@ -5,11 +5,13 @@ import React from 'react'
 import vecinos from '../assets/7915270_3777760.svg';
 import whatsapp from '../assets/whatsapp2.png';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Link} from 'react-router-dom';
+import '../css/notasInteres.css';
+import Accordion from 'react-bootstrap/Accordion';
 
 const NotasInteres = () => {
   return (
-    <div>
-      <section className='section'>
+    <main className='section'>
        <Breadcrumb>
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item href="./NotasInteres.js" active>
@@ -22,10 +24,10 @@ const NotasInteres = () => {
    <img src= { whatsapp } className="w2" alt='whatsapp icon'/>
  </a>
 </div>
-      <section id="services" className="features section-bg">
+    <section id="services" className="features section-bg">
   <div className="container">
     <div className="section-title">
-      <h2 data-aos="fade-in">NOTAS DE INTERES</h2>
+      <h2  className='notas-title' data-aos="fade-in">NOTAS DE INTERES</h2>
       <p data-aos="fade-in">
        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       </p>
@@ -41,39 +43,59 @@ const NotasInteres = () => {
           //value= {notas.description}
           //onChange={handleNotasChange}
         >
-          En esta área es prioritario el asesoramiento permanente y previo a
-          cualquier conflicto, trabajando en permanente contacto con la empresa
-          y especialmente con el área contable. <br />
-          Los servicios a prestar son:
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt ratione laudantium corrupti facere dolorem voluptates. Sit, obcaecati vel odio facilis et, temporibus quisquam quasi neque ducimus saepe, vitae iste. <br />
+          Los servicios son:
         </p>
-        <ul>
-          <li>
-            <i className="bi bi-check" /> a) Asesoramiento preventivo
-          </li>
-          <li>
-            <i className="bi bi-check" /> b) Contestación de telegramas
-          </li>
-          <li>
-            <i className="bi bi-check" /> c) Defensas en sede administrativa y
-            judicial
-          </li>
-          <li>
-            <i className="bi bi-check" /> d) Negociaciones colectivas
-          </li>
-          <li>
-            <i className="bi bi-check" /> e) Procedimientos preventivos de
-            crisis
-          </li>
-          
-        </ul>
-        <p />
-      </div>
+        <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+       </div>
+      
     </div>
     
   </div>
 </section>
-</section>
-    </div>
+
+<div className="categorias-btn">
+         
+         <div className='eachcat'>
+           <Link to="/novedades" className='first-btn'>
+             <span>Novedades</span>
+           </Link>
+         </div>
+        
+         <div className='eachcat'>
+           <Link to="/servicios" className='third-btn'>
+             <span>Servicios</span>
+           </Link>
+         </div>
+       
+     </div>
+
+    </main>
     
   )
 }

@@ -7,7 +7,7 @@ import TungstenIcon from '@mui/icons-material/Tungsten';
 import YardIcon from '@mui/icons-material/Yard';
 import BuildIcon from '@mui/icons-material/Build';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-
+import { Link} from 'react-router-dom';
 function Servicios() {
 
   return (
@@ -27,7 +27,7 @@ function Servicios() {
         </Breadcrumb>
     <section id="features" className="features">
       <div className="section-title text-center">
-        <h2 data-aos="fade-right"> SERVICIOS </h2>
+        <h2 className='servicios-title' data-aos="fade-right"> SERVICIOS </h2>
         <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         </p>
@@ -93,6 +93,7 @@ function Servicios() {
               <div className="col-lg-6 order-1 order-lg-2 text-center">
                 <img
                   src={vecinos}
+                  
                   alt=""
                   className="img-fluid"
                 />
@@ -205,6 +206,22 @@ function Servicios() {
       </div>
     </section>
     {/* End Features Section */}
+
+    <div className="categorias-btn">
+         
+         <div className='eachcat'>
+           <Link to="/novedades" className='first-btn'>
+             <span>Novedades</span>
+           </Link>
+         </div>
+         <div className='eachcat'>
+           <Link to="/notasInteres" className='second-btn'>
+             <span className='second-title'>Notas de Interes</span>
+           </Link>
+         </div>
+        
+       
+     </div>
     </section>
   </>
   
